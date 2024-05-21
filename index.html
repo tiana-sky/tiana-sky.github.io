@@ -29,30 +29,39 @@
         margin: 0 10px;
         font-size: 24px;
     }
+
     .portfolio {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
+        gap: 20px;
     }
+
     .portfolio-item {
-        width: 45%;
-        margin: 10px;
-        background: #fff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        padding: 20px;
+        width: calc(50% - 20px); /* Два столбца с зазором в 20px */
         box-sizing: border-box;
+        text-align: center; /* Центрирование текста */
     }
-    .portfolio-item img {
+
+    .portfolio-img {
         width: 100%;
         height: auto;
-        cursor: pointer;
+        transition: transform 0.3s ease; /* Плавное увеличение */
+        cursor: pointer; /* Указатель, чтобы показать, что это кнопка */
     }
-    .footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #ddd;
+
+    .portfolio-img:hover {
+        transform: scale(1.1); /* Увеличение изображения */
     }
+
+    .portfolio-item h3 {
+        margin-top: 10px; /* Отступ сверху для заголовка */
+    }
+
+    .portfolio-item p {
+        margin-top: 5px; /* Отступ сверху для описания */
+    }
+
+    
 </style>
 </head>
 <body>
@@ -64,161 +73,13 @@
     </div>
 </div>
 <div class="portfolio">
-    <!-- Repeat this block for each item -->
-    <div class="portfolio-item">
-        <img src="path-to-your-image.jpg" alt="Project Name" onclick="window.location='http://example.com';">
-        <h3>Project Name</h3>
-        <p>Short description of the project goes here...</p>
-    </div>
-    <!-- Repeat ends -->
-</div>
-
-<div id="main">
-    <!-- Posts -->
-        <section class="posts">
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://www.kaggle.com/code/juanmartinez95/cyclistic-case-study-python">Cyclistic Bike-Share<br>Case study</a></h2>
-                </header>
-                <a href="https://www.kaggle.com/code/juanmartinez95/cyclistic-case-study-python" class="image fit"><img src="images/bike-share-660.png" alt=""></a>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>Python: Pandas, Numpy, Matplotlib, Seaborn</li>
-                </ul>
-                <p>Data analysis of bike ride-share company Cyclistic. Project hosted on Kaggle.</p>
-                <ul class="actions special">
-                    <li><a href="https://www.kaggle.com/code/juanmartinez95/cyclistic-case-study-python" class="button">View Project</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://www.kaggle.com/code/juanmartinez95/bellabeat-case-study">Bellabeat Fitness App<br> Case study</a></h2>
-                </header>
-                <a href="https://www.kaggle.com/code/juanmartinez95/bellabeat-case-study" class="image fit"><img src="images/bellabeat_2.jpg" alt=""></a>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>Python: Pandas,Matplotlib, Seaborn,Plotly</li>
-                </ul>
-                <p>Analysis of fitness data for health-focused smart products. Project hosted on Kaggle.</p>
-                <ul class="actions special">
-                    <li><a href="https://www.kaggle.com/code/juanmartinez95/bellabeat-case-study" class="button">View Project</a></li>
-                    <li><a href="https://youtu.be/JsI71WjM5bo" class="button small">Video Explanation Walkthrough</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://lookerstudio.google.com/s/tuDAr13Zph8">OXXO stores<br> Web scraping project</a></h2>
-                </header>
-                <a href="https://lookerstudio.google.com/s/tuDAr13Zph8" class="image fit"><img src="images/oxxo_dashboard.jpg" alt=""></a>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>Python: Pandas,Beautiful Soup (web scraping)</li>
-                    <li>Google's LookerStudio</li>
-                </ul>
-                <p>Analysis of OXXO, the biggest convenience store in latin america. With data scrapped from the official website.</p>
-                <ul class="actions special">
-                    <li><a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/tree/main/oxxo_web_scraping" class="button">View Project</a></li>
-                </ul>
-                <ul class="actions small">
-                    <li><a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/tree/main/oxxo_web_scraping" class="button small">LookerStudio Dashboard</a></li>
-                    <li><a href="https://youtu.be/Lb67DJfcncA" class="button small">Video Explanation Walkthrough</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://drive.google.com/file/d/1hkt8YzRKYOhoFJDfi7h08RC6avCUQFR3/view?usp=share_link">Tsunamis: Unveiling the Patterns of Destruction</a></h2>
-                </header>
-                <a href="https://drive.google.com/file/d/1hkt8YzRKYOhoFJDfi7h08RC6avCUQFR3/view?usp=share_link" class="image fit"><img src="images/tsunami_tableau.jpg" alt=""></a>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>SQL, Microsoft Excel, Tableau.</li>
-                </ul>
-                <p>A Data Analysis of Tsunami Occurrences and Impacts worldwide across history.</p>
-                <ul class="actions special">
-                    <li><a href="https://drive.google.com/file/d/1hkt8YzRKYOhoFJDfi7h08RC6avCUQFR3/view?usp=share_link" class="button">View Project</a></li>
-                </ul>
-                <ul class="actions small">
-                    <li><a href="https://public.tableau.com/app/profile/juan.martinez7433/viz/UnveilingthePatternsofDestructionADataAnalysisofTsunamiOccurrencesandImpacts/Dashboard6" class="button small">Tableau Dashboard</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://public.tableau.com/app/profile/juan.martinez7433/viz/MigrantsdeathsanddissappearancesattheUS-MexicoBorder/Dashboard">Migrant deaths and dissappearances<br>at the US - Mexico border</a></h2>
-                </header>
-                <a href="https://public.tableau.com/app/profile/juan.martinez7433/viz/MigrantsdeathsanddissappearancesattheUS-MexicoBorder/Dashboard" class="image fit"><img src="images/Migrant_deaths_pic.jpg" alt=""></a>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>Tableau.</li>
-                </ul>
-                <p>Incidents of recorded migrant deaths and dissappearances between 2014 and 2023.</p>
-                <ul class="actions special">
-                    <li><a href="https://public.tableau.com/app/profile/juan.martinez7433/viz/MigrantsdeathsanddissappearancesattheUS-MexicoBorder/Dashboard" class="button">View Dashboard</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/blob/main/Retail_sales_analysis/Retail_sales_analysis.ipynb">Retail Sales<br>Analysis</a></h2>
-                </header>
-                <a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/blob/main/Retail_sales_analysis/Retail_sales_analysis.ipynb" class="image fit"><img src="images/retail.jpg" alt=""></a>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>Python: Pandas, Numpy, Matplotlib</li>
-                </ul>
-                <p>Retail analysis on Python answering common stakeholder's questions </p>
-                <ul class="actions special">
-                    <li><a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/blob/main/Retail_sales_analysis/Retail_sales_analysis.ipynb" class="button">View Project</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://youtu.be/avcLh5G3yCQ">Iowa liquor sales<br>SQL exploration</a></h2>
-                </header>
-                <a href="https://youtu.be/avcLh5G3yCQ" class="image fit"><img src="images/liquor.jpg" alt=""></a>
-                <p>Exploring and answering common stakeholder questions regarding liquor sales in the state of Iowa </p>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>BigQuery SQL, Google Cloud, LookerStudio</li>
-                </ul>
-                <ul class="actions special">
-                    <li><a href="https://youtu.be/avcLh5G3yCQ" class="button">View video walkthrough</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/tree/main/survey_powerbi">Survey data<br>Dashboard</a></h2>
-                </header>
-                <a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/tree/main/survey_powerbi" class="image fit"><img src="images/survey_data.png" alt=""></a>
-                <p>Comparison between the different Data Professional roles</p>
-                <h3>Skills:</h3>
-                <ul>
-                    <li>PowerBi</li>
-                </ul>
-                <ul class="actions special">
-                    <li><a href="https://github.com/Jc-martinez95/Data_analysis_Portfolio/tree/main/survey_powerbi" class="button">View project</a></li>
-                </ul>
-            </article>
-            <article>
-                <header>
-                    <span class="date"></span>
-                    <h2><a href="https://public.tableau.com/app/profile/juan.martinez7433">Tableau<br>Dashboards</a></h2>
-                </header>
-                <a href="https://public.tableau.com/app/profile/juan.martinez7433" class="image fit"><img src="images/tableau_public.jpg" alt=""></a>
-                <p>Tableau Dashboards Portfolio. Featuring analysis of retail sales, Airbnb, IMDB and many more. </p>
-                <ul class="actions special">
-                    <li><a href="https://public.tableau.com/app/profile/juan.martinez7433" class="button">View Tableau portfolio</a></li>
-                </ul>
-            </article>
-        </section>
-
-    <!-- Footer -->
+        <!-- Repeat this block for each item -->
+        <div class="portfolio-item">
+            <img class="portfolio-img" src="path-to-your-image.jpg" alt="Project Name" onclick="window.location='http://example.com';">
+            <h3>Project Name</h3>
+            <p>Short description of the project goes here...</p>
+        </div>
+        <!-- Repeat ends -->
 </div>
 
 
