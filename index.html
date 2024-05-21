@@ -51,11 +51,12 @@
 
 
     .portfolio-img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease; /* Плавное увеличение */
-        cursor: pointer; /* Указатель, чтобы показать, что это кнопка */
-    }
+            width: 410px; /* Фиксированная ширина */
+            height: 270px; /* Фиксированная высота */
+            object-fit: contain; /* Обеспечивает обрезку изображения, чтобы оно соответствовало заданным размерам */
+            transition: transform 0.3s ease; /* Плавное увеличение */
+            cursor: pointer; /* Указатель, чтобы показать, что это кнопка */
+        }
 
     .portfolio-img:hover {
         transform: scale(1.1); /* Увеличение изображения */
