@@ -33,14 +33,22 @@
     .portfolio {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        justify-content: space-around;
+        padding: 20px;
     }
+
 
     .portfolio-item {
         width: calc(50% - 20px); /* Два столбца с зазором в 20px */
         box-sizing: border-box;
         text-align: center; /* Центрирование текста */
+        margin: 10px;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 20px;
+        box-sizing: border-box;
     }
+
 
     .portfolio-img {
         width: 100%;
@@ -62,6 +70,13 @@
     }
 
     
+    
+    
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ddd;
+
 </style>
 </head>
 <body>
@@ -75,12 +90,20 @@
 <div class="portfolio">
         <!-- Repeat this block for each item -->
         <div class="portfolio-item">
-            <img class="portfolio-img" src="path-to-your-image.jpg" alt="Project Name" onclick="window.location='http://example.com';">
+            <img class="portfolio-img" src="/Users/ipeople/Documents/htmlpage/image/electro-vehicle.webp" alt="Electric Vehicles Market Size Analysis" onclick="window.location='https://www.kaggle.com/code/tetianar/electric-vehicles-market-size-analysis-16-05-24';">
+            <h3>Project Name</h3>
+            <p>Short description of the project goes here...</p>
+        </div>
+
+        <div class="portfolio-item">
+            <img class="portfolio-img" src="/Users/ipeople/Documents/htmlpage/image/fitness-tracke.webp" alt="Analysis of Fitness Tracker Consumers" onclick="window.location='https://www.kaggle.com/code/tetianar/analysis-of-fitness-tracker-consumers-may-24';">
             <h3>Project Name</h3>
             <p>Short description of the project goes here...</p>
         </div>
         <!-- Repeat ends -->
 </div>
+
+
 
 
 
