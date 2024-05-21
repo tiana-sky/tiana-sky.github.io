@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>Tetiana Reznychenko Portfolio</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+    .header {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #e0e0e0;
+    }
+    .header h1 {
+        font-size: 2.5em;
+        color: #2a2a2a;
+    }
+    .social-links {
+        margin-top: 20px;
+    }
+    .social-links a {
+        text-decoration: none;
+        color: #555;
+        margin: 0 10px;
+        font-size: 24px;
+    }
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .portfolio-item {
+        width: 45%;
+        margin: 10px;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ddd;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Tetiana Reznychenko</h1>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+        <a href="https://github.com/your-github" target="_blank">GitHub</a>
+    </div>
+</div>
+<div class="portfolio">
+    <!-- Repeat this block for each item -->
+    <div class="portfolio-item">
+        <img src="path-to-your-image.jpg" alt="Project Name" onclick="window.location='http://example.com';">
+        <h3>Project Name</h3>
+        <p>Short description of the project goes here...</p>
+    </div>
+    <!-- Repeat ends -->
+</div>
+<div class="footer">
+    <p>Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+</div>
+</body>
+</html>
